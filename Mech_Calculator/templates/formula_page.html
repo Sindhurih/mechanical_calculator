@@ -1,0 +1,53 @@
+{% load static %}
+<html>
+<head>
+<title>MEC</title>
+</head>
+
+    <body style ="background-image:url('{% static 'images/white1.jpeg' %}')">;
+<div class="row">
+
+          <div class="vl">
+              <center>
+      <font color="black" style="font-size:20px" ><center><big><h1><u>{{name}} </u></h1></big></center></font>
+
+
+<font color="black" style="font-size:20px" ><center><big><b><h3><u> Formula:  {{formula}} </u></h3></b></big></center></font>
+
+      <form action="" method="post">
+    {% csrf_token %}
+    <table>
+    <font color="black" style="font-size:20px" ><center><big>{{ form.as_p }}</big></center></font>
+    </table>
+    <input type="submit"  class="btn btn-primary" value="Submit"  style="font-size:18px; width: 75px; height: 50px;"/>
+        <input type="button" class="btn btn-primary" value="Back" onclick="history.back();"
+       style="font-size:18px; width: 75px; height: 50px;"/>
+        <a href="/" class="btn btn-primary" style="font-size:25px" >Home</a>
+  </form>
+
+      <div>
+        <br>
+        <h2><b><u>Result</u></b></h2>
+       <h3>  {{ r }} </h3>
+      </div>
+</div>
+
+</center>
+    </div>
+
+</div>
+
+
+<!--    <div class="row">-->
+<!--        <div class="col-md-6"></div>-->
+<!--        <div class="col-md-6">{{ description }}</div>-->
+<!--    </div>-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></body>
+  </body>
+</html>

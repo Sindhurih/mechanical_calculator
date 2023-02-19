@@ -1,0 +1,40 @@
+{% load static %}
+<html lang="en">
+<head>
+  <title>Start</title>
+    <style>
+        button
+{
+    font-size:40px;
+    padding:10px;
+    border-radius:10px;
+    margin:20px
+}
+#btn
+{
+    position:fixed;
+    left:50%;
+    top:50%;
+}
+ </style>
+<link rel="stylesheet" href="border.html">
+</head>
+
+<body style ="background-image:url('{% static 'images/black1.jpg' %}')">;>
+<font color="white" style="font-family:Bradley Hand ITC;font-size:20px" ><center><big><h1><i>Mechanical Engineering Calculator </i></h1></big></center></font>
+<div id="container">
+   <center><button id="btn1"><a href="{% url 'show_cards' %}" class="card_detail.html">Start</a></button></center>
+</div>utto
+<div class="card bg-dark text-black">
+    <div class="container"></div>
+            <div class="border">
+                <div class="pic"></div>
+            </div>
+  <div class="card-img-overlay">
+    <h5 class="card-title"></h5>
+</div>
+
+</div>
+</body>
+
+</html>
