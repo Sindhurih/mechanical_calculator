@@ -210,9 +210,9 @@ def push_and_pull_calc(form):
 def cal_pipe_enlargement(form):
     t=form.cleaned_data['t']
     B=form.cleaned_data['B']
-    if t <= 45:
-        K=2.6*math.sin(t/2)*pow((1-B^2),2)
+    if t > 45:
+        K = pow((1 - B ^ 2), 2)
     else:
-        K = pow((1-B^2),2)
+        K = 2.6 * math.sin(t / 2) * pow((1 - B ^ 2), 2)
     return K
 
